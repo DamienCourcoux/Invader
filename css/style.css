@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* une celllule noire */
+.cell-black {
+    background-color: black;
+}
+
+/* le formulaire */
+.configuration {
+    background-color: #3148ad;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* input "nombre de cases" */
+#input-grid-size {
+    /* ordre du border radius : TOP LEFT ---> BOTTOM LEFT dans le sens horaire */
+    border-radius: 10px 0 0 10px;
+}
+
+/* inputs */
+#input-grid-size, #input-pixel-size {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: white;
+    outline: none;
+    border: 3px solid transparent;
+}
+
+/* lorsque on clique sur l'element */
+#input-grid-size:focus,
+#input-pixel-size:focus {
+    border: 3px solid orange;
+}
+
+
+
+/* bouton "valider" */
+
+#submit-btn {
+    border-radius: 0 10px 10px 0;
+    background-color: #6759CD;
+    color: white;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+#input-size, #submit-btn {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+/* container de la grille */
+#invader {
+    background : linear-gradient(#4754C7,#6759CD);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    align-items: flex-start;
+}
+
+/* case de la grille */
+td {
+    background-color: lightgrey;
+    border: 2px solid white;
+}
+
+/* la palette de couleurs */
+#colorPalette {
+    background-color: rgba(0, 0, 0, 0.123);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 70px;
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* une des couleurs de la palette */
+.color-option {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+/* --active : un modifier pour la couleur active */
+.color-option--active {
+    height: 45px;
+    width: 45px;
+    border: 2px solid black;
+}
+
+.color-empty {
+    background-color: #CCC;
+}
+
+.color-plain {
+    background-color: #485460;
+}
+
+.color-highlight {
+    background-color: #79EA83;
+}
+
+.color-light {
+    background-color: #fbc048;
+}
